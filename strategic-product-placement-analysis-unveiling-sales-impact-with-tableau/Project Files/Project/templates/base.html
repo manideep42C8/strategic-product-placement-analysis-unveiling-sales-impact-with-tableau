@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">SALES</div>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/dashboard">DashBoard</a>
+        <a href="/story">Story</a>
+    </div>
+</div>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

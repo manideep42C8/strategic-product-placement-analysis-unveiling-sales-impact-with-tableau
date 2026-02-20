@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="full-page">
+    <h2 class="page-title">PRODUCT PLACEMENT ANALYSIS - DASHBOARD</h2>
+
+    <div class="tableau-full">
+        <div class="tableauPlaceholder" id="vizDashboard">
+            <object class="tableauViz">
+                <param name="host_url" value="https://public.tableau.com/" />
+                <param name="embed_code_version" value="3" />
+                <param name="name" value="Book1_dash1/Dashboard1" />
+                <param name="tabs" value="no" />
+                <param name="toolbar" value="yes" />
+            </object>
+        </div>
+    </div>
+</div>
+<body class="no-scroll">
+
+<script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+
+{% endblock %}

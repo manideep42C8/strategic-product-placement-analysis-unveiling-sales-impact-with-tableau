@@ -1,0 +1,117 @@
+/* ================= GLOBAL ================= */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* Allow normal scroll by default (for Home) */
+body {
+    overflow-x: hidden;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0,0,0,0.95);
+
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* CENTER MENU */
+.menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: gold;
+}
+
+/* ================= HOME (HERO) ================= */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url('/static/hero.jpg') center/cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 70px; /* navbar offset */
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ================= DASHBOARD & STORY ONLY ================= */
+/* Disable page scroll ONLY on these pages */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Page title */
+.page-title {
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    font-size: 22px;
+    z-index: 10;
+}
+
+/* Fullscreen Tableau container */
+.tableau-full {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+    height: calc(100vh - 140px);
+
+    background: #fff;
+    box-sizing: border-box;
+}
+
+/* Tableau fills container */
+.tableauPlaceholder,
+.tableauViz,
+.tableauPlaceholder object {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
